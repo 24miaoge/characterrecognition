@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>汉字闯关游戏（版本二）</title>
+<script type="text/javascript">
+
+	function onLoad() {
+		try {
+			var launchFrame = document.getElementById("LaunchFrame");
+			launchFrame.src = "http://research.millisecond.com/weicong1203/v2.web" + window.location.search;
+		}
+		catch(ex) {
+			window.alert(ex.Message);
+		}
+	}
+
+</script>
+</head>
+<body style="background-color:#f3f3f3" onload="onLoad()">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center">
+<td>
+<!-- The following iframe embeds the Inquisit launch page into this page. If you see a scrollbar, increase the height. -->
+<iframe id="LaunchFrame" width="640px" height="800px" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" title="Inquisit Launch" src="" />
+<!-- End of iframe definition. -->
+</td>
+</tr>
+</tabl

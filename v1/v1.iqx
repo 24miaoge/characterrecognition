@@ -1,0 +1,2782 @@
+﻿****************************
+         预实验
+****************************
+<item a1>
+/1="  月  "
+</item>
+
+<item a2>
+/1="  悦  "
+</item>
+
+<item a3>
+/1="  日  "
+</item>
+
+<item a4>
+/1="  亮  "
+</item>
+
+<item b1>
+/1="  以  "
+</item>
+
+<item b2>
+/1="  蚂  "
+</item>
+
+<item b3>
+/1="  蚁  "
+</item>
+
+<item b4>
+/1="  议  "
+</item>
+
+<item c1>
+/1="  又  "
+</item>
+
+<item c2>
+/1="  左  "
+</item>
+
+<item c3>
+/1="  在  "
+</item>
+
+<item c4>
+/1="  右  "
+</item>
+
+<item sound_0>
+/1="1025yue4.wav"
+/2="1084yi3.wav"
+/3="1039you4.wav"
+</item>
+
+<text a1>
+   / items = a1
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text a2>
+   / items = a2
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text a3>
+   / items = a3
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text a4>
+   / items = a4
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+<text b1>
+   / items = b1
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text b2>
+   / items = b2
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text b3>
+   / items = b3
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text b4>
+   / items = b4
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+<text c1>
+   / items = c1
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text c2>
+   / items = c2
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text c3>
+   / items = c3
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text c4>
+   / items = c4
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+<sound sound_a1>
+/items=sound_0
+/select = 1
+</sound>
+
+<sound sound_b1>
+/items=sound_0
+/select = 2
+</sound>
+
+<sound sound_c1>
+/items=sound_0
+/select = 3
+</sound>
+
+<trial a1>
+   / stimulusframes = [1=fixation;10=background,a1,a2,a3,a4,E,sound_a1]
+   / validresponse = (a1,a2,a3,a4,E)
+   /recorddata = false
+</trial>
+
+<trial b1>
+   / stimulusframes = [1=fixation;10=background,b1,b2,b3,b4,E,sound_b1]
+   / validresponse = (b1,b2,b3,b4,E)
+   /recorddata = false
+</trial>
+
+<trial c1>
+   / stimulusframes = [1=fixation;10=background,c1,c2,c3,c4,E,sound_c1]
+   / validresponse = (c1,c2,c3,c4,E)
+   /recorddata = false
+</trial>
+
+<block a1>
+   / screencolor =  whitesmoke
+   / trials = [1=sequence(a1,b1,c1)]
+</block>
+   / blockfeedback = (meanlatency,correct)
+<text mtxt>
+   / hjustify = left
+   / items = ("你完美地通过了练习，现在按下“鼠标键”踏上旅程吧！")
+   / size = (66.66%, 46.66%)
+   / fontstyle = ("Songti SC", 4%, true, false, false, false, 5, 0)
+   / txcolor = (0,0,0)
+   / txbgcolor = transparent
+</text>
+
+<trial m>
+   / validresponse=(lbuttondown)
+   / stimulusframes = [1=mtxt]
+   / recorddata = false
+</trial>
+
+<block m>
+   / screencolor = whitesmoke
+   / trials = [1=m]
+</block>
+
+*****************************
+          正式实验
+*****************************
+<item AA>
+/1="  娘  "
+/2="  凉  "
+/3="  夜  "
+/4="  但  "
+/5="  匹  "
+/6="  海  "
+</item>
+
+<item AB>  
+/1="  凉  "
+/2="  京  "
+/3="  晚  "
+/4="  单  "
+/5="  区  "
+/6="  洋  "
+</item>
+
+<item AC>  
+/1="  狼  "
+/2="  冰  "
+/3="  页  "
+/4="  是  "
+/5="  皮  "
+/6="  梅  "
+</item>
+
+<item AD>  
+/1="  奶  "
+/2="  粮  "
+/3="  液  "
+/4="  旧  "
+/5="  布  "
+/6="  还  "
+</item>
+
+<item sound_A>
+/1="1112niang2.wav"
+/2="1066liang2.wav"
+/3="1155ye4.wav"
+/4="1154dan4.wav"
+/5="1140pi3.wav"
+/6="1072hai3.wav"
+</item>
+
+
+<item BA>  
+/1="  相  "
+/2="  又  "
+/3="  出  "
+/4="  侧  "
+/5="  急  "
+/6="  凉  "
+</item>
+
+<item BB>  
+/1="  像  "
+/2="  文  "
+/3="  处  "
+/4="  旁  "
+/5="  焦  "
+/6="  惊  "
+</item>
+
+<item BC>  
+/1="  象  "
+/2="  闻  "
+/3="  所  "
+/4="  劳  "
+/5="  叫  "
+/6="  经  "
+</item>
+
+<item BD>  
+/1="  好  "
+/2="  语  "
+/3="  外  "
+/4="  胖  "
+/5="  准  "
+/6="  讶  "
+</item>
+
+<item sound_B>
+/1="1057xiang4.wav"
+/2="1022wen2.wav"
+/3="1106chu3.wav"
+/4="1148pang2.wav"
+/5="1190jiao1.wav"
+/6="1115jing1.wav"
+</item>
+
+<item CA>
+/1="  贤  "
+/2="  方  "
+/3="  拨  "
+/4="  助  "
+/5="  包  "
+/6="  伐  "
+</item>
+
+<item CB>
+/1="  前  "
+/2="  元  "
+/3="  汉  "
+/4="  棒  "
+/5="  贝  "
+/6="  游  "
+</item>
+
+<item CC>
+/1="  先  "
+/2="  圆  "
+/3="  波  "
+/4="  帮  "
+/5="  宝  "
+/6="  戏  "
+</item>
+
+<item CD>
+/1="  允  "
+/2="  固  "
+/3="  浪  "
+/4="  绑  "
+/5="  空  "
+/6="  细  "
+</item>
+
+<item sound_C>
+/1="1107xian1.wav"
+/2="1131yuan2.wav"
+/3="1127bo1.wav"
+/4="1061bang1.wav"
+/5="1196bao3.wav"
+/6="1136xi4.wav"
+</item>
+
+<item DA>
+/1="  铜  "
+/2="  眼  "
+/3="  郑  "
+/4="  直  "
+/5="  问  "
+/6="  累  "
+/7="  来  "
+</item>
+
+<item DB>
+/1="  锅  "
+/2="  木  "
+/3="  正  "
+/4="  假  "
+/5="  尖  "
+/6="  别  "
+/7="  木  "
+</item>
+
+<item DC>
+/1="  签  "
+/2="  日  "
+/3="  齐  "
+/4="  针  "
+/5="  中  "
+/6="  尖  "
+/7="  笨  "
+</item>
+
+<item DD>
+/1="  铅  "
+/2="  目  "
+/3="  整  "
+/4="  真  "
+/5="  间  "
+/6="  类  "
+/7="  本  "
+</item>
+
+<item sound_D>
+/1="1126qian1.wav"
+/2="1013mu4.wav"
+/3="1167zheng3.wav"
+/4="1074zhen1.wav"
+/5="1091jian1.wav"
+/6="1217lei4.wav"
+/7="1033ben3.wav"
+</item>
+
+<item EA>
+/1="  朵  "
+/2="  赶  "
+/3="  寒  "
+/4="  眼  "
+/5="  长  "
+/6="  费  "
+</item>
+
+<item EB>
+/1="  杂  "
+/2="  干  "
+/3="  含  "
+/4="  根  "
+/5="  短  "
+/6="  省  "
+</item>
+
+<item EC>
+/1="  躲  "
+/2="  追  "
+/3="  赛  "
+/4="  睛  "
+/5="  常  "
+/6="  赏  "
+</item>
+
+<item ED>
+/1="  花  "
+/2="  赵  "
+/3="  冷  "
+/4="  演  "
+/5="  卡  "
+/6="  非  "
+</item>
+
+<item sound_E>
+/1="1064duo3.wav"
+/2="1101gan3.wav"
+/3="1220han2.wav"
+/4="1135yan3.wav"
+/5="1004chang2.wav"
+/6="1202fei4.wav"
+</item>
+
+<item FA>
+/1="  章  "
+/2="  线  "
+/3="  外  "
+/4="  实  "
+/5="  甩  "
+/6="  污  "
+</item>
+
+<item FB>
+/1="  童  "
+/2="  现  "
+/3="  边  "
+/4="  识  "
+/5="  用  "
+/6="  染  "
+</item>
+
+<item FC>
+/1="  孩  "
+/2="  在  "
+/3="  迈  "
+/4="  况  "
+/5="  使  "
+/6="  然  "
+</item>
+
+<item FD>
+/1="  同  "
+/2="  观  "
+/3="  编  "
+/4="  知  "
+/5="  勇  "
+/6="  杂  "
+</item>
+
+<item sound_F>
+/1="1067tong2.wav"
+/2="1142xian4.wav"
+/3="1096bian1.wav"
+/4="1137shi2.wav"
+/5="1020yong4.wav"
+/6="1171ran3.wav"
+</item>
+
+<item GA>
+/1="  亏  "
+/2="  叶  "
+/3="  财  "
+/4="  在  "
+/5="  盐  "
+/6="  慢  "
+/7="  庭  "
+</item>
+
+<item GB>
+/1="  转  "
+/2="  上  "
+/3="  线  "
+/4="  左  "
+/5="  庆  "
+/6="  夸  "
+/7="  宝  "
+</item>
+
+<item GC>
+/1="  专  "
+/2="  业  "
+/3="  钱  "
+/4="  右  "
+/5="  厌  "
+/6="  快  "
+/7="  家  "
+</item>
+
+<item GD>
+/1="  广  "
+/2="  作  "
+/3="  前  "
+/4="  又  "
+/5="  恶  "
+/6="  块  "
+/7="  加  "
+</item>
+
+<item sound_G>
+/1="1092zhuan1.wav"
+/2="1041ye4.wav"
+/3="1204qian2.wav"
+/4="1039you4.wav"
+/5="1169yan4.wav"
+/6="1056kuai4.wav"
+/7="1076jia1.wav"
+</item>
+
+<item HA>
+/1="  写  "
+/2="  工  "
+/3="  刊  "
+/4="  允  "
+/5="  田  "
+/6="  怕  "
+</item>
+
+<item HB>
+/1="  科  "
+/2="  浓  "
+/3="  尖  "
+/4="  送  "
+/5="  会  "
+/6="  割  "
+</item>
+
+<item HC>
+/1="  正  "
+/2="  灰  "
+/3="  里  "
+/4="  边  "
+/5="  返  "
+/6="  海  "
+</item>
+
+<item HD>
+/1="  斜  "
+/2="  农  "
+/3="  利  "
+/4="  运  "
+/5="  回  "
+/6="  害  "
+</item>
+
+<item sound_H>
+/1="1212xie2.wav"
+/2="1149nong2.wav"
+/3="1210li4.wav"
+/4="1132yun4.wav"
+/5="1011hui2.wav"
+/6="1133hai4.wav"
+</item>
+
+<item IA>
+/1="  果  "
+/2="  封  "
+/3="  明  "
+/4="  治  "
+/5="  马  "
+/6="  让  "
+</item>
+
+<item IB>
+/1="  国  "
+/2="  闭  "
+/3="  阴  "
+/4="  理  "
+/5="  麻  "
+/6="  认  "
+</item>
+
+<item IC>
+/1="  水  "
+/2="  风  "
+/3="  名  "
+/4="  沿  "
+/5="  妈  "
+/6="  座  "
+</item>
+
+<item ID>
+/1="  早  "
+/2="  卦  "
+/3="  亮  "
+/4="  制  "
+/5="  鸟  "
+/6="  然  "
+</item>
+
+<item sound_I>
+/1="1055guo3.wav"
+/2="1203feng1.wav"
+/3="1060ming2.wav"
+/4="1141zhi4.wav"
+/5="1002ma3.wav"
+/6="1080rang4.wav"
+</item>
+
+<item JA>
+/1="  并  "
+/2="  居  "
+/3="  跳  "
+/4="  沟  "
+/5="  没  "
+/6="  莫  "
+/7="  欢  "
+</item>
+
+<item JB>
+/1="  病  "
+/2="  住  "
+/3="  桃  "
+/4="  勾  "
+/5="  无  "
+/6="  摸  "
+/7="  环  "
+</item>
+
+<item JC>
+/1="  痛  "
+/2="  往  "
+/3="  讨  "
+/4="  引  "
+/5="  天  "
+/6="  末  "
+/7="  绕  "
+</item>
+
+<item JD>
+/1="  疾  "
+/2="  祝  "
+/3="  李  "
+/4="  匀  "
+/5="  吴  "
+/6="  抚  "
+/7="  坏  "
+</item>
+
+<item sound_J>
+/1="1120bing4.wav"
+/2="1161zhu4.wav"
+/3="1095tao2.wav"
+/4="1218gou1.wav"
+/5="1045wu2.wav"
+/6="1215mo1.wav"
+/7="1199huan2.wav"
+</item>
+
+<item KA>
+/1="  斗  "
+/2="  密  "
+/3="  低  "
+/4="  停  "
+/5="  身  "
+/6="  忧  "
+</item>
+
+<item KB>
+/1="  投  "
+/2="  面  "
+/3="  亮  "
+/4="  亭  "
+/5="  求  "
+/6="  有  "
+</item>
+
+<item KC>
+/1="  头  "
+/2="  米  "
+/3="  高  "
+/4="  停  "
+/5="  申  "
+/6="  优  "
+</item>
+
+<item KD>
+/1="  脑  "
+/2="  木  "
+/3="  羔  "
+/4="  止  "
+/5="  由  "
+/6="  良  "
+</item>
+
+<item sound_K>
+/1="1052tou2.wav"
+/2="1040mi3.wav"
+/3="1098gao1.wav"
+/4="1180ting2.wav"
+/5="1123shen1.wav"
+/6="1146you1.wav"
+</item>
+
+<item LA>
+/1="  谷  "
+/2="  火  "
+/3="  将  "
+/4="  勺  "
+/5="  次  "
+/6="  晴  "
+</item>
+
+<item LB>
+/1="  妈  "
+/2="  伴  "
+/3="  已  "
+/4="  小  "
+/5="  母  "
+/6="  晶  "
+</item>
+
+<item LC>
+/1="  估  "
+/2="  活  "
+/3="  从  "
+/4="  多  "
+/5="  美  "
+/6="  眼  "
+</item>
+
+<item LD>
+/1="  姑  "
+/2="  伙  "
+/3="  以  "
+/4="  少  "
+/5="  每  "
+/6="  睛  "
+</item>
+
+<item sound_L>
+/1="1147gu1.wav"
+/2="1065huo3.wav"
+/3="1105yi3.wav"
+/4="1005shao3.wav"
+/5="1144mei3.wav"
+/6="1114jing1.wav"
+</item>
+
+<item MA>
+/1="  冷  "
+/2="  朗  "
+/3="  点  "
+/4="  野  "
+/5="  说  "
+/6="  户  "
+/7="  扎  "
+</item>
+
+<item MB>
+/1="  冰  "
+/2="  诵  "
+/3="  电  "
+/4="  理  "
+/5="  硕  "
+/6="  尸  "
+/7="  抢  "
+</item>
+
+<item MC>
+/1="  吟  "
+/2="  狼  "
+/3="  焦  "
+/4="  也  "
+/5="  话  "
+/6="  门  "
+/7="  炸  "
+</item>
+
+<item MD>
+/1="  愣  "
+/2="  明  "
+/3="  滴  "
+/4="  田  "
+/5="  悦  "
+/6="  虎  "
+/7="  刺  "
+</item>
+
+<item sound_M>
+/1="1087leng3.wav"
+/2="1175lang3.wav"
+/3="1079dian3.wav"
+/4="1184ye3.wav"
+/5="1097shuo1.wav"
+/6="1111hu4.wav"
+/7="1150zha1.wav"
+</item>
+
+<item NA>
+/1="  取  "
+/2="  者  "
+/3="  事  "
+/4="  于  "
+/5="  语  "
+/6="  吞  "
+</item>
+
+<item NB>
+/1="  最  "
+/2="  折  "
+/3="  件  "
+/4="  鱼  "
+/5="  雨  "
+/6="  吐  "
+</item>
+
+<item NC>
+/1="  极  "
+/2="  拆  "
+/3="  见  "
+/4="  苗  "
+/5="  伞  "
+/6="  图  "
+</item>
+
+<item ND>
+/1="  罪  "
+/2="  弯  "
+/3="  伴  "
+/4="  渔  "
+/5="  而  "
+/6="  土  "
+</item>
+
+<item sound_N>
+/1="1103zui4.wav"
+/2="1143zhe2.wav"
+/3="1125jian4.wav"
+/4="1019yu2.wav"
+/5="1036yu3.wav"
+/6="1128tu4.wav"
+</item>
+
+<item OA>
+/1="  棋  "
+/2="  头  "
+/3="  西  "
+/4="  缺  "
+/5="  八  "
+/6="  百  "
+</item>
+
+<item OB>
+/1="  帜  "
+/2="  目  "
+/3="  车  "
+/4="  前  "
+/5="  已  "
+/6="  黑  "
+</item>
+
+<item OC>
+/1="  旗  "
+/2="  木  "
+/3="  东  "
+/4="  欠  "
+/5="  巴  "
+/6="  白  "
+</item>
+
+<item OD>
+/1="  骑  "
+/2="  日  "
+/3="  冬  "
+/4="  久  "
+/5="  泥  "
+/6="  败  "
+</item>
+
+<item sound_O>
+/1="1157qi2.wav"
+/2="1050mu4.wav"
+/3="1030dong1.wav"
+/4="1139qian4.wav"
+/5="1028ba1.wav"
+/6="1015bai2.wav"
+</item>
+
+<item PA>
+/1="  侯  "
+/2="  失  "
+/3="  及  "
+/4="  卒  "
+/5="  市  "
+/6="  次  "
+</item>
+
+<item PB>
+/1="  后  "
+/2="  米  "
+/3="  剂  "
+/4="  块  "
+/5="  生  "
+/6="  这  "
+</item>
+
+<item PC>
+/1="  等  "
+/2="  密  "
+/3="  压  "
+/4="  岁  "
+/5="  首  "
+/6="  些  "
+</item>
+
+<item PD>
+/1="  候  "
+/2="  迷  "
+/3="  挤  "
+/4="  碎  "
+/5="  省  "
+/6="  此  "
+</item>
+
+<item sound_P>
+/1="1163hou4.wav"
+/2="1177mi2.wav"
+/3="1182ji3.wav"
+/4="1195sui4.wav"
+/5="1185sheng3.wav"
+/6="1211ci3.wav"
+</item>
+
+
+<item QA>
+/1="  算  "
+/2="  寿  "
+/3="  问  "
+/4="  种  "
+/5="  树  "
+/6="  珠  "
+</item>
+
+<item QB>
+/1="  术  "
+/2="  收  "
+/3="  题  "
+/4="  重  "
+/5="  村  "
+/6="  主  "
+</item>
+
+<item QC>
+/1="  策  "
+/2="  命  "
+/3="  稳  "
+/4="  钟  "
+/5="  林  "
+/6="  宝  "
+</item>
+
+<item QD>
+/1="  酸  "
+/2="  涛  "
+/3="  间  "
+/4="  植  "
+/5="  数  "
+/6="  环  "
+</item>
+
+<item sound_Q>
+/1="1201suan4.wav"
+/2="1214shou4.wav"
+/3="1086wen4.wav"
+/4="1110zhong4.wav"
+/5="1078shu4.wav"
+/6="1170zhu1.wav"
+</item>
+
+
+<item RA>
+/1="  韦  "
+/2="  字  "
+/3="  肉  "
+/4="  铲  "
+/5="  骄  "
+/6="  均  "
+</item>
+
+<item RB>
+/1="  书  "
+/2="  宇  "
+/3="  筋  "
+/4="  产  "
+/5="  桥  "
+/6="  平  "
+</item>
+
+<item RC>
+/1="  本  "
+/2="  羽  "
+/3="  肋  "
+/4="  出  "
+/5="  瞧  "
+/6="  干  "
+</item>
+
+<item RD>
+/1="  叔  "
+/2="  天  "
+/3="  金  "
+/4="  户  "
+/5="  梁  "
+/6="  评  "
+</item>
+
+<item sound_R>
+/1="1046shu1.wav"
+/2="1164yu3.wav"
+/3="1183jin1.wav"
+/4="1156chan3.wav"
+/5="1070qiao2.wav"
+/6="1043ping2.wav"
+</item>
+
+
+<item SA>
+/1="  间  "
+/2="  冰  "
+/3="  真  "
+/4="  塘  "
+/5="  每  "
+/6="  动  "
+/7="  厅  "
+</item>
+
+<item SB>
+/1="  钱  "
+/2="  且  "
+/3="  弯  "
+/4="  吃  "
+/5="  羔  "
+/6="  显  "
+/7="  闻  "
+</item>
+
+<item SC>
+/1="  前  "
+/2="  并  "
+/3="  直  "
+/4="  池  "
+/5="  美  "
+/6="  晃  "
+/7="  听  "
+</item>
+
+<item SD>
+/1="  后  "
+/2="  开  "
+/3="  至  "
+/4="  地  "
+/5="  丽  "
+/6="  黄  "
+/7="  折  "
+</item>
+
+<item sound_S>
+/1="1089qian2.wav"
+/2="1159bing4.wav"
+/3="1121zhi2.wav"
+/4="1145chi2.wav"
+/5="1062mei3.wav"
+/6="1172huang4.wav"
+/7="1094ting1.wav"
+</item>
+
+
+<item TA>
+/1="  红  "
+/2="  场  "
+/3="  喜  "
+/4="  木  "
+/5="  杰  "
+/6="  全  "
+</item>
+
+<item TB>
+/1="  彩  "
+/2="  光  "
+/3="  奚  "
+/4="  锦  "
+/5="  合  "
+/6="  斤  "
+</item>
+
+<item TC>
+/1="  哄  "
+/2="  厂  "
+/3="  流  "
+/4="  绵  "
+/5="  洁  "
+/6="  玉  "
+</item>
+
+<item TD>
+/1="  虹  "
+/2="  广  "
+/3="  溪  "
+/4="  棉  "
+/5="  结  "
+/6="  金  "
+</item>
+
+<item sound_T>
+/1="1173hong2.wav"
+/2="1010guang3.wav"
+/3="1209xi1.wav"
+/4="1193mian2.wav"
+/5="1174jie2.wav"
+/6="1129jin1.wav"
+</item>
+
+<item UA>
+/1="  怪  "
+/2="  更  "
+/3="  耳  "
+/4="  泪  "
+/5="  脚  "
+/6="  牛  "
+/7="  师  "
+</item>
+
+<item UB>
+/1="  性  "
+/2="  耕  "
+/3="  朵  "
+/4="  水  "
+/5="  肚  "
+/6="  年  "
+/7="  教  "
+</item>
+
+<item UC>
+/1="  乖  "
+/2="  史  "
+/3="  身  "
+/4="  类  "
+/5="  步  "
+/6="  羊  "
+/7="  诗  "
+</item>
+
+<item UD>
+/1="  异  "
+/2="  越  "
+/3="  尔  "
+/4="  沮  "
+/5="  交  "
+/6="  扭  "
+/7="  帅  "
+</item>
+
+<item sound_U>
+/1="1113guai4.wav"
+/2="1073geng4.wav"
+/3="1042er3.wav"
+/4="1160lei4.wav"
+/5="1168jiao3.wav"
+/6="1012niu2.wav"
+/7="1108shi1.wav"
+</item>
+
+<item VA>
+/1="  你  "
+/2="  司  "
+/3="  囚  "
+/4="  娃  "
+/5="  说  "
+/6="  钟  "
+</item>
+
+<item VB>
+/1="  泥  "
+/2="  公  "
+/3="  因  "
+/4="  挂  "
+/5="  话  "
+/6="  中  "
+</item>
+
+<item VC>
+/1="  呢  "
+/2="  工  "
+/3="  此  "
+/4="  瓜  "
+/5="  活  "
+/6="  间  "
+</item>
+
+<item VD>
+/1="  沙  "
+/2="  会  "
+/3="  音  "
+/4="  钩  "
+/5="  画  "
+/6="  终  "
+</item>
+
+<item sound_V>
+/1="1208ni2.wav"
+/2="1035gong1.wav"
+/3="1093yin1.wav"
+/4="1118gua4.wav"
+/5="1058hua4.wav"
+/6="1016zhong1.wav"
+</item>
+
+<item WA>
+/1="  账  "
+/2="  夜  "
+/3="  或  "
+/4="  铃  "
+/5="  平  "
+/6="  八  "
+</item>
+
+<item WB>
+/1="  章  "
+/2="  碗  "
+/3="  话  "
+/4="  峰  "
+/5="  办  "
+/6="  呢  "
+</item>
+
+<item WC>
+/1="  张  "
+/2="  晚  "
+/3="  活  "
+/4="  岭  "
+/5="  半  "
+/6="  吧  "
+</item>
+
+<item WD>
+/1="  弛  "
+/2="  免  "
+/3="  生  "
+/4="  另  "
+/5="  分  "
+/6="  把  "
+</item>
+
+<item sound_W>
+/1="1117zhang1.wav"
+/2="1109wan3.wav"
+/3="1082huo2.wav"
+/4="1179ling3.wav"
+/5="1027ban4.wav"
+/6="1083ba.wav"
+</item>
+
+<item XA>
+/1="  摸  "
+/2="  水  "
+/3="  纠  "
+/4="  丢  "
+/5="  凶  "
+/6="  孤  "
+</item>
+
+<item XB>
+/1="  什  "
+/2="  留  "
+/3="  较  "
+/4="  来  "
+/5="  只  "
+/6="  浊  "
+</item>
+
+<item XC>
+/1="  幺  "
+/2="  梳  "
+/3="  喊  "
+/4="  曲  "
+/5="  长  "
+/6="  度  "
+</item>
+
+<item XD>
+/1="  么  "
+/2="  流  "
+/3="  叫  "
+/4="  去  "
+/5="  兄  "
+/6="  独  "
+</item>
+
+<item sound_X>
+/1="1090me.wav"
+/2="1216liu2.wav"
+/3="1099jiao4.wav"
+/4="1081qu4.wav"
+/5="1181xiong1.wav"
+/6="1116du2.wav"
+</item>
+
+<item E>  
+   /1="  不知道  "
+</item>
+
+<item background>
+   /1 = "背景图.jpg"
+</item>
+
+<item 指导语>
+/1="指导语.wav"
+</item>
+***************************
+//A为正确答案，其他选项随机
+***************************
+<text AA>
+   / items = AA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text AB>
+   / items = AB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.AA.currentindex
+</text>
+
+<text AC>
+   / items = AC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.AA.currentindex
+</text>
+
+<text AD>
+   / items = AD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.AA.currentindex
+</text>
+
+***************************
+//B为正确答案，其他选项随机
+***************************
+<text BA>
+   / items = BA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.BB.currentindex
+</text>
+
+<text BB>
+   / items = BB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text BC>
+   / items = BC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.BB.currentindex
+</text>
+
+<text BD>
+   / items = BD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.BB.currentindex
+</text>
+
+***************************
+//C为正确答案，其他选项随机
+***************************
+<text CA>
+   / items = CA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.CC.currentindex
+</text>
+
+<text CB>
+   / items = CB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.CC.currentindex
+</text>
+
+<text CC>
+   / items = CC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text CD>
+   / items = CD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.CC.currentindex
+</text>
+
+***************************
+//D为正确答案，其他选项随机
+***************************
+<text DA>
+   / items = DA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.DD.currentindex
+</text>
+
+<text DB>
+   / items = DB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.DD.currentindex
+</text>
+
+<text DC>
+   / items = DC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.DD.currentindex
+</text>
+
+<text DD>
+   / items = DD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+***************************
+//A为正确答案，其他选项随机
+***************************
+<text EA>
+   / items = EA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text EB>
+   / items = EB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.EA.currentindex
+</text>
+
+<text EC>
+   / items = EC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.EA.currentindex
+</text>
+
+<text ED>
+   / items = ED
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.EA.currentindex
+</text>
+
+***************************
+//B为正确答案，其他选项随机
+***************************
+<text FA>
+   / items = FA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.FB.currentindex
+</text>
+
+<text FB>
+   / items = FB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text FC>
+   / items = FC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.FB.currentindex
+</text>
+
+<text FD>
+   / items = FD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.FB.currentindex
+</text>
+
+***************************
+//C为正确答案，其他选项随机
+***************************
+<text GA>
+   / items = GA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.GC.currentindex
+</text>
+
+<text GB>
+   / items = GB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.GC.currentindex
+</text>
+
+<text GC>
+   / items = GC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text GD>
+   / items = GD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.GC.currentindex
+</text>
+
+***************************
+//D为正确答案，其他选项随机
+***************************
+<text HA>
+   / items = HA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.HD.currentindex
+</text>
+
+<text HB>
+   / items = HB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.HD.currentindex
+</text>
+
+<text HC>
+   / items = HC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.HD.currentindex
+</text>
+
+<text HD>
+   / items = HD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+
+***************************
+//A为正确答案，其他选项随机
+***************************
+<text IA>
+   / items = IA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text IB>
+   / items = IB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.IA.currentindex
+</text>
+
+<text IC>
+   / items = IC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.IA.currentindex
+</text>
+
+<text ID>
+   / items = ID
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.IA.currentindex
+</text>
+
+***************************
+//B为正确答案，其他选项随机
+***************************
+<text JA>
+   / items = JA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.JB.currentindex
+</text>
+
+<text JB>
+   / items = JB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text JC>
+   / items = JC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.JB.currentindex
+</text>
+
+<text JD>
+   / items = JD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.JB.currentindex
+</text>
+
+***************************
+//C为正确答案，其他选项随机
+***************************
+<text KA>
+   / items = KA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.KC.currentindex
+</text>
+
+<text KB>
+   / items = KB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.KC.currentindex
+</text>
+
+<text KC>
+   / items = KC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text KD>
+   / items = KD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.KC.currentindex
+</text>
+
+***************************
+//D为正确答案，其他选项随机
+***************************
+<text LA>
+   / items = LA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.LD.currentindex
+</text>
+
+<text LB>
+   / items = LB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.LD.currentindex
+</text>
+
+<text LC>
+   / items = LC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.LD.currentindex
+</text>
+
+<text LD>
+   / items = LD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+
+
+***************************
+//A为正确答案，其他选项随机
+***************************
+<text MA>
+   / items = MA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text MB>
+   / items = MB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.MA.currentindex
+</text>
+
+<text MC>
+   / items = MC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.MA.currentindex
+</text>
+
+<text MD>
+   / items = MD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.MA.currentindex
+</text>
+
+***************************
+//B为正确答案，其他选项随机
+***************************
+<text NA>
+   / items = NA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.NB.currentindex
+</text>
+
+<text NB>
+   / items = NB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text NC>
+   / items = NC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.NB.currentindex
+</text>
+
+<text ND>
+   / items = ND
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.NB.currentindex
+</text>
+
+***************************
+//C为正确答案，其他选项随机
+***************************
+<text OA>
+   / items = OA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.OC.currentindex
+</text>
+
+<text OB>
+   / items = OB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.OC.currentindex
+</text>
+
+<text OC>
+   / items = OC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text OD>
+   / items = OD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.OC.currentindex
+</text>
+
+***************************
+//D为正确答案，其他选项随机
+***************************
+<text PA>
+   / items = PA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.PD.currentindex
+</text>
+
+<text PB>
+   / items = PB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.PD.currentindex
+</text>
+
+<text PC>
+   / items = PC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.PD.currentindex
+</text>
+
+<text PD>
+   / items = PD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+***************************
+//A为正确答案，其他选项随机
+***************************
+<text QA>
+   / items = QA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text QB>
+   / items = QB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.QA.currentindex
+</text>
+
+<text QC>
+   / items = QC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.QA.currentindex
+</text>
+
+<text QD>
+   / items = QD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.QA.currentindex
+</text>
+
+***************************
+//B为正确答案，其他选项随机
+***************************
+<text RA>
+   / items = RA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.RB.currentindex
+</text>
+
+<text RB>
+   / items = RB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text RC>
+   / items = RC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.RB.currentindex
+</text>
+
+<text RD>
+   / items = RD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.RB.currentindex
+</text>
+
+***************************
+//C为正确答案，其他选项随机
+***************************
+<text SA>
+   / items = SA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.SC.currentindex
+</text>
+
+<text SB>
+   / items = SB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.SC.currentindex
+</text>
+
+<text SC>
+   / items = SC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text SD>
+   / items = SD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.SC.currentindex
+</text>
+
+***************************
+//D为正确答案，其他选项随机
+***************************
+<text TA>
+   / items = TA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.TD.currentindex
+</text>
+
+<text TB>
+   / items = TB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.TD.currentindex
+</text>
+
+<text TC>
+   / items = TC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.TD.currentindex
+</text>
+
+<text TD>
+   / items = TD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+***************************
+//A为正确答案，其他选项随机
+***************************
+<text UA>
+   / items = UA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+</text>
+
+<text UB>
+   / items = UB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.UA.currentindex
+</text>
+
+<text UC>
+   / items = UC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.UA.currentindex
+</text>
+
+<text UD>
+   / items = UD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.UA.currentindex
+</text>
+
+***************************
+//B为正确答案，其他选项随机
+***************************
+<text VA>
+   / items = VA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.VB.currentindex
+</text>
+
+<text VB>
+   / items = VB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+</text>
+
+<text VC>
+   / items = VC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.VB.currentindex
+</text>
+
+<text VD>
+   / items = VD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.VB.currentindex
+</text>
+
+***************************
+//C为正确答案，其他选项随机
+***************************
+<text WA>
+   / items = WA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.WC.currentindex
+</text>
+
+<text WB>
+   / items = WB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.WC.currentindex
+</text>
+
+<text WC>
+   / items = WC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+</text>
+
+<text WD>
+   / items = WD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+   / select = text.WC.currentindex
+</text>
+
+***************************
+//D为正确答案，其他选项随机
+***************************
+<text XA>
+   / items = XA
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (27pct,40pct) 
+   / select = text.XD.currentindex
+</text>
+
+<text XB>
+   / items = XB
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (44pct,40pct) 
+   / select = text.XD.currentindex
+</text>
+
+<text XC>
+   / items = XC
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (61pct,40pct) 
+   / select = text.XD.currentindex
+</text>
+
+<text XD>
+   / items = XD
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (78pct,40pct) 
+</text>
+
+<text E>
+   / items = E
+   / fontstyle =  ("Microsoft YaHei", 6%, false, false, false, false, 5, 0)
+   / txbgcolor = (245,245,245)
+   / txcolor = black
+   / position = (30pct,57pct) 
+</text>
+
+<text fixation>
+/items = ("+")
+/fontstyle = ("Arial",5%)
+/txbgcolor = (transparent)
+/txcolor = (0,0,0)
+</text>
+
+<text instructiontxt>
+   / hjustify = left
+   / items = ("小朋友你好，欢迎参加汉字闯关游戏！
+当你听到一个字后，请用鼠标点击这个字所在的白色方块。
+如果你实在不知道，就选“不知道”。
+现在开始你的英雄之旅吧！")
+   / size = (66.66%, 46.66%)
+   / fontstyle = ("Songti SC", 4%, true, false, false, false, 5, 0)
+   / txcolor = (0,0,0)
+   / txbgcolor = transparent
+</text>
+
+<text keytxt>
+   / items = ("请按鼠标键开始练习")
+   / vposition = 80pct
+   / fontstyle = ("Songti SC", 4%, true, false, false, false, 5, 0)
+   / txcolor = black
+   / txbgcolor = transparent
+</text>
+
+
+<sound sound_A>
+   / erase = true
+   / items = sound_A
+   / playthrough = false
+   / volume = 0
+   / select = text.AA.currentindex
+</sound>
+
+<sound sound_B>
+   / erase = true
+   / items = sound_B
+   / playthrough = false
+   / volume = 0
+   / select = text.BB.currentindex
+</sound>
+
+
+<sound sound_C>
+   / erase = true
+   / items = sound_C
+   / playthrough = false
+   / volume = 0
+   / select = text.CC.currentindex
+</sound>
+
+
+<sound sound_D>
+   / erase = true
+   / items = sound_D
+   / playthrough = false
+   / volume = 0
+   / select = text.DD.currentindex
+</sound>
+
+<sound sound_E>
+   / erase = true
+   / items = sound_E
+   / playthrough = false
+   / volume = 0
+   / select = text.EA.currentindex
+</sound>
+
+<sound sound_F>
+   / erase = true
+   / items = sound_F
+   / playthrough = false
+   / volume = 0
+   / select = text.FB.currentindex
+</sound>
+
+<sound sound_G>
+   / erase = true
+   / items = sound_G
+   / playthrough = false
+   / volume = 0
+   / select = text.GC.currentindex
+</sound>
+
+<sound sound_H>
+   / erase = true
+   / items = sound_H
+   / playthrough = false
+   / volume = 0
+   / select = text.HD.currentindex
+</sound>
+
+<sound sound_I>
+   / erase = true
+   / items = sound_I
+   / playthrough = false
+   / volume = 0
+   / select = text.IA.currentindex
+</sound>
+
+<sound sound_J>
+   / erase = true
+   / items = sound_J
+   / playthrough = false
+   / volume = 0
+   / select = text.JB.currentindex
+</sound>
+
+<sound sound_K>
+   / erase = true
+   / items = sound_K
+   / playthrough = false
+   / volume = 0
+   / select = text.KC.currentindex
+</sound>
+
+<sound sound_L>
+   / erase = true
+   / items = sound_L
+   / playthrough = false
+   / volume = 0
+   / select = text.LD.currentindex
+</sound>
+
+<sound sound_M>
+   / erase = true
+   / items = sound_M
+   / playthrough = false
+   / volume = 0
+   / select = text.MA.currentindex
+</sound>
+
+<sound sound_N>
+   / erase = true
+   / items = sound_N
+   / playthrough = false
+   / volume = 0
+   / select = text.NB.currentindex
+</sound>
+
+
+<sound sound_O>
+   / erase = true
+   / items = sound_O
+   / playthrough = false
+   / volume = 0
+   / select = text.OC.currentindex
+</sound>
+
+
+<sound sound_P>
+   / erase = true
+   / items = sound_P
+   / playthrough = false
+   / volume = 0
+   / select = text.PD.currentindex
+</sound>
+
+<sound sound_Q>
+   / erase = true
+   / items = sound_Q
+   / playthrough = false
+   / volume = 0
+   / select = text.QA.currentindex
+</sound>
+
+<sound sound_R>
+   / erase = true
+   / items = sound_R
+   / playthrough = false
+   / volume = 0
+   / select = text.RB.currentindex
+</sound>
+
+
+<sound sound_S>
+   / erase = true
+   / items = sound_S
+   / playthrough = false
+   / volume = 0
+   / select = text.SC.currentindex
+</sound>
+
+
+<sound sound_T>
+   / erase = true
+   / items = sound_T
+   / playthrough = false
+   / volume = 0
+   / select = text.TD.currentindex
+</sound>
+
+<sound sound_U>
+   / erase = true
+   / items = sound_U
+   / playthrough = false
+   / volume = 0
+   / select = text.UA.currentindex
+</sound>
+
+<sound sound_V>
+   / erase = true
+   / items = sound_V
+   / playthrough = false
+   / volume = 0
+   / select = text.VB.currentindex
+</sound>
+
+
+<sound sound_W>
+   / erase = true
+   / items = sound_W
+   / playthrough = false
+   / volume = 0
+   / select = text.WC.currentindex
+</sound>
+
+
+<sound sound_X>
+   / erase = true
+   / items = sound_X
+   / playthrough = false
+   / volume = 0
+   / select = text.XD.currentindex
+</sound>
+
+<sound 指导语>
+   / erase = true
+   / items = 指导语
+   / playthrough = false
+   / volume = 0
+</sound>
+
+<picture background>
+   / items = background
+   / position = (50,50)
+   / size = (100pct,100pct)
+</picture>
+
+<picture p1>
+   / items = ("图片1.jpg")
+   / position = (50,50)
+   / size = (100pct,100pct)
+</picture>
+
+<picture p2>
+   / items = ("图片2.jpg")
+   / position = (50,50)
+   / size = (100pct,100pct)
+</picture>
+
+<picture p3>
+   / items = ("图片3.jpg")
+   / position = (50,50)
+   / size = (100pct,100pct)
+</picture>
+
+<picture p4>
+   / items = ("图片4.jpg")
+   / position = (50,50)
+   / size = (100pct,100pct)
+</picture>
+
+<picture p5>
+   / items = ("图片5.jpg")
+   / position = (50,50)
+   / size = (100pct,100pct)
+</picture>
+
+<picture p6>
+   / items = ("图片6.jpg")
+   / position = (50,50)
+   / size = (100pct,100pct)
+</picture>
+
+<item ending>
+   /1 = "ending.jpg"
+</item>
+
+<picture ending>
+   / items = ending
+   / position = (50,50)
+   / size = (100pct,100pct)
+</picture>
+
+<trial ending>
+   / stimulusframes = [1=ending] 
+   / validresponse = (anyresponse)
+   /recorddata = false
+</trial>
+***************************************************
+//定义试次的格式，如前后暂停的时间和正确反应的类型。
+***************************************************
+
+<trial instruction>
+   / validresponse=(lbuttondown)
+   / stimulusframes = [1=instructiontxt,keytxt,指导语]
+   / recorddata = false
+</trial>
+
+<trial 1>
+   / stimulusframes = [1=fixation;10=background,AA,AB,AC,AD,E,sound_A]
+   / validresponse = (AA,AB,AC,AD,E)
+   / correctresponse = (AA)
+</trial>
+
+<trial 2>
+   / stimulusframes = [1=fixation;10=background,BB,BA,BC,BD,E,sound_B]
+   / validresponse = (BB,BA,BC,BD,E)
+   / correctresponse = (BB)
+</trial>
+
+<trial 3>
+   / stimulusframes = [1=fixation;10=background,CC,CA,CB,CD,E,sound_C]
+   / validresponse = (CC,CA,CB,CD,E)
+   / correctresponse = (CC)
+</trial>
+
+<trial 4>
+   / stimulusframes = [1=fixation;10=background,DD,DA,DB,DC,E,sound_D]
+   / validresponse = (DD,DA,DB,DC,E)
+   / correctresponse = (DD)
+</trial>
+
+<trial 5>
+   / stimulusframes = [1=p1] 
+   / validresponse = (noresponse)
+   / trialduration = 5000
+   /recorddata = false
+</trial>
+
+<trial 6>
+   / stimulusframes = [1=fixation;10=background,EA,EB,EC,ED,E, sound_E]
+   / validresponse = (EA,EB,EC,ED,E)
+   / correctresponse = (EA)
+</trial>
+
+<trial 7>
+   / stimulusframes = [1=fixation;10=background,FB,FA,FC,FD,E, sound_F]
+   / validresponse = (FB,FA,FC,FD,E)
+   / correctresponse = (FB)
+</trial>
+
+<trial 8>
+   / stimulusframes = [1=fixation;10=background,GC,GA,GB,GD,E, sound_G]
+   / validresponse = (GC,GA,GB,GD,E)
+   / correctresponse = (GC)
+</trial>
+
+<trial 9>
+   / stimulusframes = [1=fixation;10=background,HD,HA,HB,HC,E, sound_H]
+   / validresponse = (HD,HA,HB,HC,E)
+   / correctresponse = (HD)
+</trial>
+
+<trial 10>
+   / stimulusframes = [1=p2] 
+   / validresponse = (noresponse)
+   / trialduration = 5000
+   /recorddata = false
+</trial>
+
+<trial 11>
+   / stimulusframes = [1=fixation;10=background,IA,IB,IC,ID,E, sound_I]
+   / validresponse = (IA,IB,IC,ID,E)
+   / correctresponse = (IA)
+</trial>
+
+<trial 12>
+   / stimulusframes = [1=fixation;10=background,JB,JA,JC,JD,E, sound_J]
+   / validresponse = (JB,JA,JC,JD,E)
+   / correctresponse = (JB)
+</trial>
+
+<trial 13>
+   / stimulusframes = [1=fixation;10=background,KC,KA,KB,KD,E, sound_K]
+   / validresponse = (KC,KA,KB,KD,E)
+   / correctresponse = (KC)
+</trial>
+
+<trial 14>
+   / stimulusframes = [1=fixation;10=background,LD,LA,LB,LC,E, sound_L]
+   / validresponse = (LD,LA,LB,LC,E)
+   / correctresponse = (LD)
+</trial>
+
+<trial 15>
+   / stimulusframes = [1=p3] 
+   / validresponse = (noresponse)
+   / trialduration = 5000
+   /recorddata = false
+</trial>
+
+<trial 16>
+   / stimulusframes = [1=fixation;10=background,MA,MB,MC,MD,E, sound_M]
+   / validresponse = (MA,MB,MC,MD,E)
+   / correctresponse = (MA)
+</trial>
+
+<trial 17>
+   / stimulusframes = [1=fixation;10=background,NB,NA,NC,ND,E, sound_N]
+   / validresponse = (NB,NA,NC,ND,E)
+   / correctresponse = (NB)
+</trial>
+
+<trial 18>
+   / stimulusframes = [1=fixation;10=background,OC,OA,OB,OD,E, sound_O]
+   / validresponse = (OC,OA,OB,OD,E)
+   / correctresponse = (OC)
+</trial>
+
+<trial 19>
+   / stimulusframes = [1=fixation;10=background,PD,PA,PB,PC,E, sound_P]
+   / validresponse = (PD,PA,PB,PC,E)
+   / correctresponse = (PD)
+</trial>
+
+<trial 20>
+   / stimulusframes = [1=p4] 
+   / validresponse = (noresponse)
+   / trialduration = 5000
+   /recorddata = false
+</trial>
+
+<trial 21>
+   / stimulusframes = [1=fixation;10=background,QA,QB,QC,QD,E,sound_Q]
+   / validresponse = (QA,QB,QC,QD,E)
+   / correctresponse = (QA)
+</trial>
+
+<trial 22>
+   / stimulusframes = [1=fixation;10=background,RB,RA,RC,RD,E, sound_R]
+   / validresponse = (RB,RA,RC,RD,E)
+   / correctresponse = (RB)
+</trial>
+
+<trial 23>
+   / stimulusframes = [1=fixation;10=background,SC,SA,SB,SD,E, sound_S]
+   / validresponse = (SC,SA,SB,SD,E)
+   / correctresponse = (SC)
+</trial>
+
+<trial 24>
+   / stimulusframes = [1=fixation;10=background,TD,TA,TB,TC,E, sound_T]
+   / validresponse = (TD,TA,TB,TC,E)
+   / correctresponse = (TD)
+</trial>
+
+<trial 25>
+   / stimulusframes = [1=p5] 
+   / validresponse = (noresponse)
+   / trialduration = 5000
+   /recorddata = false
+</trial>
+
+<trial 26>
+   / stimulusframes = [1=fixation;10=background,UA,UB,UC,UD,E, sound_U]
+   / validresponse = (UA,UB,UC,UD,E)
+   / correctresponse = (UA)
+</trial>
+
+<trial 27>
+   / stimulusframes = [1=fixation;10=background,VB,VA,VC,VD,E,sound_V]
+   / validresponse = (VB,VA,VC,VD,E)
+   / correctresponse = (VB)
+</trial>
+
+<trial 28>
+   / stimulusframes = [1=fixation;10=background,WC,WA,WB,WD,E,sound_W]
+   / validresponse = (WC,WA,WB,WD,E)
+   / correctresponse = (WC)
+</trial>
+
+<trial 29>
+   / stimulusframes = [1=fixation;10=background,XD,XA,XB,XC,E,sound_X]
+   / validresponse = (XD,XA,XB,XC,E)
+   / correctresponse = (XD)
+</trial>
+
+<trial 30>
+   / stimulusframes = [1=p6] 
+   / validresponse = (noresponse)
+   / trialduration = 5000
+   /recorddata = false
+</trial>
+***************************************************
+//定义区组，如前后暂停的时间和正确反应的类型。
+***************************************************
+
+<block blk1>
+   / screencolor =  whitesmoke
+   / trials = [1-24=noreplacenorepeat(1,2,3,4);25=4;26=5;27-50=noreplacenorepeat(6,7,8,9);51=8;52=10;53-76=noreplacenorepeat(11,12,13,14);77=12;78=15;79-102=noreplacenorepeat(16,17,18,19);103=16;104=20;105-128=noreplacenorepeat(21,22,23,24);129=23;130=25;131-154=noreplacenorepeat(26,27,28,29);155=26;156=30]
+   </block>
+   / blockfeedback = (meanlatency,correct)
+
+<block instruction>
+   / screencolor = whitesmoke
+   / trials = [1=instruction]
+</block>
+
+<block ending>
+   / screencolor = whitesmoke
+   / trials = [1=ending]
+</block>
+***************************************************
+//定义实验，包括指导语，预实验，正式实验中block的呈现序列，以及最终的反馈。
+***************************************************
+<expt> 
+   / blocks = [1=instruction;2=a1;3=m;4=blk1;5=ending]
+</expt>
+
+<defaults>
+/ fontstyle = ("Arial", 4.0%, true)
+/ inputdevice = mouse
+/ halign = center
+/ valign = center
+</defaults>
